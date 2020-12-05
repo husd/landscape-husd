@@ -1,4 +1,6 @@
-# Landscape plus
+# Landscape husd
+
+是根据 landscape-plus修改的，以下内容都来自landscape-plus的文档
 
 [![Join the chat at https://gitter.im/xiangming/landscape-plus](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/xiangming/landscape-plus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
