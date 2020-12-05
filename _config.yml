@@ -1,0 +1,52 @@
+
+# Header
+menu:
+  博客首页: /
+  全部文章: /archives
+  关于作者: /about
+  WEB开发: /web-need-know/
+  新手入门: /program-for-new-01/
+
+# Content
+excerpt_link: 查看全部
+fancybox: false
+mathjax: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+- links
+
+##  这里开始是主题配置信息  ##
+
+# Links
+links:
+  阿土的博客: http://gobue.com/
+  晓刚的博客: http://www.cnblogs.com/xiaogangfan
+  toukii的Go语言: http://mdblog.daoapp.io/
+  酷壳: https://coolshell.cn/
+
+# Miscellaneous
+
+google_analytics:
+favicon: /img/favicon.ico
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+##  这里开始是主题配置信息  ##
+gitalk:
+  enable: false
+  owner: husd
+  admin: husd
+  repo: husd.github.io
+  ClientID: 779d8666e3a6d54eb138
+  ClientSecret: decf04420c34a5415da9e852786fbe4ff4601acb
+  labels: 'gitalk'
+  distractionFreeMode: true
