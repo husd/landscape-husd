@@ -46,7 +46,7 @@ gitalk:
   owner: husd
   admin: husd
   repo: husd.github.io
-  ClientID: 779d8666e3a6d54eb138
-  ClientSecret: decf04420c34a5415da9e852786fbe4ff4601acb
+  ClientID: xx
+  ClientSecret: xx
   labels: 'gitalk'
   distractionFreeMode: true
