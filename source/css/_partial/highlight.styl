@@ -4,22 +4,24 @@ highlight-current-line = #3E3D32
 highlight-selection = #49483E
 highlight-foreground = #F8F8F2
 highlight-comment = #75715E
-highlight-red = #F92672
+highlight-red = #e32d40
+highlight-black = #1d2b2c
 highlight-orange = #FD971F
 highlight-yellow = #E6DB74
-highlight-green = #A6E22E
+highlight-green = #2d8a48
 highlight-aqua = #A1EFE4
-highlight-blue = #66D9EF
+highlight-blue = #222b9e
 highlight-purple = #AE81FF
 highlight-grey=#fff
+highlight-grey1=#eceff1
 
 $code-block
-  background: highlight-grey
-  margin: 0 article-padding * -1
+  background: highlight-grey1
+  margin: 0 0 * -1
   padding: 15px article-padding
   border-style: solid
   border-color: color-border
-  border-width: 1px 0
+  border-width: 1px 1px 1px 1px
   overflow: auto
   color: highlight-background
   line-height: font-size * line-height
@@ -27,6 +29,9 @@ $code-block
 $line-numbers
   color: #666
   font-size: 0.85em
+
+.highlight
+  font-size: 80%
 
 .article-entry
   pre, code
@@ -75,7 +80,7 @@ $line-numbers
     margin: 0 article-padding * -1
     border-style: solid
     border-color: color-border
-    border-width: 1px 0
+    border-width: 1px 1px 1px 1px
     background: highlight-background
     padding: 15px article-padding 15px 0
     .gist-file
@@ -127,14 +132,14 @@ pre
   .css .id
   .css .class
   .css .pseudo
-    color: highlight-red
+    color: highlight-black
   .number
   .built_in
   .literal
   .constant
-    color: highlight-purple
+    color: highlight-green
   .params
-    color: highlight-orange
+    color: highlight-black
   .class
   .ruby .class .title
   .css .rules .attribute
@@ -146,7 +151,7 @@ pre
   .header
   .ruby .symbol
   .xml .cdata
-    color: highlight-yellow
+    color: highlight-green
   .css .hexcolor
     color: highlight-aqua
   .function

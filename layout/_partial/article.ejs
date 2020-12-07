@@ -7,26 +7,28 @@
             <%- partial('post/title', {class_name: 'article-title'}) %>
         </div>
         <br>
-        <div style="text-align:center" class="article-meta">
-          <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-          <%- partial('post/category') %>
-          <div class="article-category">作者: <%-post.author%></div>
-          <div class="article-category">浏览量:<span id="busuanzi_value_page_pv"></span>次</div>
+        <div style="text-align:center;margin-left:23%" class="article-meta">
+          <div class="card-solid icon"></div><%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+          <div class="search-solid icon"></div><%- partial('post/category') %>
+          <div class="article-category"><div class="profile-solid icon"></div><a class="article-category-link">作者: <%-post.author%></a></div>
+          <div class="article-category"><div class="float-solid icon"></div><a class="article-category-link">浏览量:<span id="busuanzi_value_page_pv"></span>次</a></div>
         </div>
-        <div style="border:2px solid #009688"></div>
+        <div style="border:2px solid #0f897d"></div>
       </header>
     <% } %>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-          </p>
+    <div class="article-width">
+      <div class="article-entry" itemprop="articleBody">
+        <% if (post.excerpt && index){ %>
+          <%- post.excerpt %>
+          <% if (theme.excerpt_link){ %>
+            <p class="article-more-link">
+              <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+            </p>
+          <% } %>
+        <% } else { %>
+          <%- post.content %>
         <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
+      </div>
     </div>
     <footer class="article-footer">
       <%- partial('post/tag') %>
