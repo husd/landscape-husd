@@ -2,10 +2,11 @@
 # Header
 menu:
   博客首页: /
+  JAVA新手入门: /tags/新手入门/page/2/
   全部文章: /archives
-  关于作者: /about
+  关于双King: /about
   WEB开发: /web-need-know/
-  新手入门: /program-for-new-01/
+
 
 # Content
 excerpt_link: 查看全部
@@ -26,6 +27,7 @@ widgets:
 
 # Links
 links:
+  美团技术博客: https://tech.meituan.com/
   阿土的博客: http://gobue.com/
   晓刚的博客: http://www.cnblogs.com/xiaogangfan
   toukii的Go语言: http://mdblog.daoapp.io/
